@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="restoran.css">
+    <title>Pauza</title>
+    <style>
+   
+    </style>
+</head>
+<body>
+    <div class="ponuda">
+    <button onclick="sendvici('sendvici')" type="button" value="button">Sendviči</button>
+     <div ID="sendvici" style="display:none;">
+          <div class="image">
+              <img src="sendvici-panini.png" alt="Sendvic Panini" width>
+              <h3>Panini</h3>
+              <h4>Pecivo, pesto, sir, paradajz, tikvica, feta</h4>
+              <h2>5 KM</h2>
+              
+            </div>
+            <div class="image">
+                <img src="sendvici-tost.png" alt="Sendvic Tost">
+                <h3>Tost</h3>
+                <h4>Pecivo, sir trapist, zdenka, salama, puter</h4>
+                <h2>5 KM</h2>
+                
+            </div>
+            <div class="image">
+                <img src="sendvici-tuna.png" alt="Sendvic Tuna">
+                <h3>Tuna</h3>
+                <h4>Pecivo, luk, tuna, salata</h4>
+                <h2>6 KM</h2>
+                
+            </div>
+          </div>
+
+        <button onclick="pizza('pizza')"type="button" value="button">Pizza</button>
+        <div ID="pizza" style="display:none;">
+          <div class="image">
+              <img src="pizza-margarita.png" alt="Pizza Margherita" width>
+              <h3>Margherita</h3>
+              <h4>Pecivo, paradajz sos, sir</h4>
+              <h2>5 KM</h2>
+              
+            </div>
+            <div class="image">
+                <img src="pizza-kapricoza.png" alt="Pizza Capricciosa">
+                <h3>Capricciosa</h3>
+                <h2>7 KM</h2>
+               
+            </div>
+            <div class="image">
+                <img src="pizza-fungi.png" alt="Pizza Funghi">
+                <h3>Funghi</h3>
+                <h2>7 KM</h2>
+                
+            </div>
+            <div class="image">
+                <img src="pizza-cetiri-vrste-sira.png" alt="Quattro Formaggi">
+                <h3>Quattro Formaggi</h3>
+                <h2>8 KM</h2>
+                
+            </div>
+            <div class="image">
+                <img src="pizza-vegetarijana.png" alt="Pizza Vegetariana">
+                <h3>Pizza Vegetariana</h3>
+                <h2>7 KM</h2>
+                
+            </div>
+            <div class="image">
+                <img src="pizza-kalzona.png" alt="Pizza Calzona">
+                <h3>Calzona</h3>
+                <h2>5 KM</h2>
+                
+            </div>
+          </div>
+
+          <button onclick="salad('salad')"type="button" value="button">Salate</button>
+        <div ID="salad" style="display:none;">
+          <div class="image">
+              <img src="salate-cezar.png" alt="Cesar Salata" width>
+              <h3>Cezar salata</h3>
+              <h4>Pecivo, paradajz sos, sir</h4>
+              <h2>5 KM</h2>
+              
+            </div>
+
+            <div class="image">
+                <img src="salate-grcka.png" alt="Grcka Salata">
+                <h3>Grčka salata</h3>
+                <h2>5KM</h2>
+                
+            </div>
+            <div class="image">
+                <img src="salate-pileca.png" alt="Pileca Salata">
+                <h3>Pileća salata</h3>
+                <h2>7 KM</h2>
+                
+            </div>
+          </div>
+
+          <button onclick="pasta('pasta')"type="button" value="button">Paste</button>
+        <div ID="pasta" style="display:none;">
+          <div class="image">
+              <img src="pasta-bolonjeze.png" alt="Bolognese" width>
+              
+              <h3>Bolognese</h3>
+              <h4>Pecivo, paradajz sos, sir</h4>
+              <h2>9 KM</h2>
+              
+            </div>
+
+            <div class="image">
+                <img src="paste-cetiri-vrste-sira.png" alt="Quattro Formaggio">
+                <h3>Četiri vrste sira</h3>
+                <h2>9KM</h2>
+                
+            </div>
+
+            <div class="image">
+                <img src="paste-karbonara.png" alt="Karbonara">
+                <h3>Carbonara</h3>
+                <h2>7 KM</h2>
+                
+            </div>
+            <div class="image">
+                <img src="paste-lazanje.png" alt="Lazanje">
+                <h3>Lazanje</h3>
+                <h2>10 KM</h2>
+                
+            </div>
+          </div>
+            </div>
+
+
+
+            <Script>
+                function sendvici() {
+                    var x = document.getElementById('sendvici');
+                    if (x.style.display == 'none') {
+                        x.style.display = 'block';
+                        document.getElementById('pizza').style.display = 'none' ;
+                        document.getElementById('salad').style.display = 'none' ;
+                        document.getElementById('pasta').style.display = 'none' ;
+                        document.getElementById('burger').style.display = 'none' ;
+                    } else {
+                x.style.display = 'none';
+                    }
+                }
+                function pizza() {
+                    var o = document.getElementById('pizza');
+                    if (o.style.display == 'none') {
+                        o.style.display = 'block';
+                        document.getElementById('sendvici').style.display = 'none' ;
+                        document.getElementById('salad').style.display = 'none' ;
+                        document.getElementById('pasta').style.display = 'none' ;
+                        document.getElementById('burger').style.display = 'none' ;
+                    } else {
+                o.style.display = 'none';
+                    }
+                }
+                function salad() {
+                    var s = document.getElementById('salad');
+                    if (s.style.display == 'none') {
+                        s.style.display = 'block';
+                        document.getElementById('sendvici').style.display = 'none' ;
+                        document.getElementById('pasta').style.display = 'none' ;
+                        document.getElementById('burger').style.display = 'none' ;
+                        document.getElementById('pizza').style.display = 'none' ;
+                    } else {
+                s.style.display = 'none';
+                    }
+                }
+                function pasta() {
+                    var p = document.getElementById('pasta');
+                    if (p.style.display == 'none') {
+                        p.style.display = 'block';
+                        document.getElementById('sendvici').style.display = 'none' ;
+                        document.getElementById('burger').style.display = 'none' ;
+                        document.getElementById('pizza').style.display = 'none' ;
+                        document.getElementById('salad').style.display = 'none' ;
+                    } else {
+                p.style.display = 'none';
+                    }
+                }
+                function burger() {
+                    var b = document.getElementById('burger');
+                    if (b.style.display == 'none') {
+                        b.style.display = 'block';
+                        document.getElementById('pizza').style.display = 'none' ;
+                        document.getElementById('salad').style.display = 'none' ;
+                        document.getElementById('pasta').style.display = 'none' ;
+                        document.getElementById('sendvici').style.display = 'none' ;
+                        } else {
+                b.style.display = 'none';
+                    }
+                }
+                </Script>
+</body>
+</html>
